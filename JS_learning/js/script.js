@@ -1,20 +1,20 @@
 "use strict";
 
-console.log("arr" + "- object");
-console.log(5 + +"4");
+const numebrOfFilms = +promt("How match films do you watchts?");
 
-let incr = 10,
-    decr = 10;
+const personalMovieDB = {
+    count: numebrOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// incr++;
-// decr--;
+const a = prompt("One of the last watching films?"),
+      b = prompt("How macth do you rate it?"),
+      c = prompt("One of the last watching films?"),
+      d = prompt("How macth do you rate it?");
 
-console.log(incr);
-console.log(decr);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log(2*4 == 8);
-
-const isChecked = true,
-      isClose =false;
-
-console.log(isChecked || isClose);
